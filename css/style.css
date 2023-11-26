@@ -1,4 +1,53 @@
 html {
     padding: 0;
     margin: 0;
-}
+  }
+  
+  .container_1:hover {
+    
+    background-color: white;
+  }
+  .container_1{
+     
+        background-image: url(https://thewaltdisneycompany.com/app/uploads/2020/01/StudioLot_TeamDisney_7-web-1440x959.jpg);
+        background-repeat: no-repeat; 
+        width: 100%px;
+        height: 600px;
+       display: flex;
+      align-items: start;
+      justify-content: center;
+      
+  
+    }
+  .top1{
+    width: 100%;
+    height: 89;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+  
+  }
+  
+  .top2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+  
+  }
+  .top3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+  }
+  
+  .h1{
+    text-align: center;
+    justify-content: center;
+    font-size: 100px;
+  }
+  
+  
