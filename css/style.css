@@ -1,53 +1,125 @@
-html {
-    padding: 0;
-    margin: 0;
-  }
-  
-  .container_1:hover {
-    
-    background-color: white;
-  }
-  .container_1{
-     
-        background-image: url(https://thewaltdisneycompany.com/app/uploads/2020/01/StudioLot_TeamDisney_7-web-1440x959.jpg);
-        background-repeat: no-repeat; 
-        width: 100%px;
-        height: 600px;
-       display: flex;
-      align-items: start;
-      justify-content: center;
-      
-  
-    }
-  .top1{
-    width: 100%;
-    height: 89;
-    background-color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 40px;
-  
-  }
-  
-  .top2{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 30px;
-  
-  }
-  .top3{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 30px;
-  }
-  
-  .h1{
-    text-align: center;
-    justify-content: center;
-    font-size: 100px;
-  }
-  
-  
+html,
+body,
+* :not(p) {
+  font-family: 'Inter', sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+.nav_bar {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  width: 100%;
+  padding: 20px 0 10px 0;
+  z-index: 4;
+  border-top: 5px solid transparent; /* Espessura do border-top */
+  border-image: linear-gradient(90deg, #ffc029 0%, #4cd8b0 100%) 1;
+  align-items: center;
+}
+.nav_bar:hover ul a {
+  color: black;
+}
+.nav_bar ul a:hover {
+  border-bottom: 3px solid transparent; /* Espessura do border-top */
+  border-image: linear-gradient(90deg, #ffc029 0%, #4cd8b0 100%) 1;
+  margin-bottom: -10px;
+}
+.nav_bar:hover {
+  transition: 0.5s;
+  background: white;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+}
+.nav_bar ul {
+  align-items: start;
+  justify-content: center;
+  text-decoration: none;
+  display: flex;
+  gap: 30px;
+  padding-bottom: 10px;
+}
+.nav_bar ul a {
+  font-size: 15px;
+  color: white;
+  text-decoration: none;
+}
+.nav_bar_img img {
+  background-image: none;
+  width: 100px;
+  margin: 0 40px;
+}
+
+.inner_ul2 {
+  padding-left: 0;
+  margin-right: 70px;
+}
+.container_1:hover {
+  background-color: white;
+}
+.WALT_COMPANY {
+  margin: 0 auto;
+}
+.WALT_COMPANY img {
+  width: 100%;
+  position: relative;
+  object-fit: cover;
+  height: 600px;
+}
+.walt_title {
+  position: absolute;
+  color: white;
+  top: 50%;
+  text-shadow: 0px 0px 10px rgba(0, 0, 0, 1);
+  text-align: center;
+  left: 50%;
+  width: 100%;
+  transform: translate(-50%, -50%);
+  font-size: 40px;
+}
+.walt_title h1 {
+  font-weight: 400;
+}
+.section_finance_container {
+  align-items: center;
+  width: 100%;
+  height: 100px;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+.finance_infos {
+  text-align: end;
+}
+.finance_infos h3 {
+  font-size: 15px;
+  font-weight: 400;
+}
+.finance_infos h4 {
+  font-size: 10px;
+  font-weight: 400;
+}
+.finance_values {
+  display: flex;
+  gap: 20px;
+}
+.finance_values h1 {
+  font-weight: 400;
+}
+.finance_values h2 {
+  font-weight: 400;
+  color: rgb(0, 150, 255);
+}
+.section_finance_container button {
+  padding: 3px 5px;
+  font-size: 15px;
+  background: none;
+  border: #4cd8b0 solid 2px;
+  border-radius: 8px;
+}
+.section_finance_container button a {
+  text-decoration: none;
+  color: #4cd8b0;
+}
