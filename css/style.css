@@ -1,11 +1,14 @@
 html,
 body,
-* :not(p) {
+* {
   font-family: 'Inter', sans-serif;
   padding: 0;
   margin: 0;
 }
-
+a {
+  text-decoration: none;
+  color: black;
+}
 .nav_bar {
   margin: 0 auto;
   display: flex;
@@ -20,10 +23,14 @@ body,
   border-image: linear-gradient(90deg, #ffc029 0%, #4cd8b0 100%) 1;
   align-items: center;
 }
+.nav_bar ul a p {
+  margin: 10px;
+}
 .nav_bar:hover ul a {
   color: black;
 }
 .nav_bar ul a:hover {
+  transition: 0.2s;
   border-bottom: 3px solid transparent; /* Espessura do border-top */
   border-image: linear-gradient(90deg, #ffc029 0%, #4cd8b0 100%) 1;
   margin-bottom: -10px;
@@ -31,7 +38,7 @@ body,
 .nav_bar:hover {
   transition: 0.5s;
   background: white;
-  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
 }
 .nav_bar ul {
   align-items: start;
@@ -61,26 +68,31 @@ body,
 }
 .WALT_COMPANY {
   margin: 0 auto;
+  height: 600px;
 }
 .WALT_COMPANY img {
   width: 100%;
-  position: relative;
+  position: absolute;
   object-fit: cover;
   height: 600px;
 }
 .walt_title {
-  position: absolute;
-  color: white;
-  top: 50%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
   text-shadow: 0px 0px 10px rgba(0, 0, 0, 1);
-  text-align: center;
-  left: 50%;
-  width: 100%;
-  transform: translate(-50%, -50%);
+  color: white;
   font-size: 40px;
 }
 .walt_title h1 {
   font-weight: 400;
+  font-family: 'Monorail', script;
+  text-transform: uppercase;
+  z-index: 5;
+}
+.walt_title h1::selection {
+  background-color: #4cd8b0;
 }
 .section_finance_container {
   align-items: center;
@@ -122,4 +134,211 @@ body,
 .section_finance_container button a {
   text-decoration: none;
   color: #4cd8b0;
+}
+
+.section_laranja {
+  background-color: #fcf8ee;
+  padding: 5% 0;
+}
+
+.Section_Gradient_Title {
+  font-family: 'Monorail';
+  font-weight: 200;
+  text-align: center;
+  font-size: 3.375rem;
+  margin-bottom: 1.2rem;
+  padding: 5px;
+  text-transform: uppercase;
+}
+.section_laranja_top {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.section_laranja_top_detail {
+  width: 150px;
+  height: 5px;
+  background: linear-gradient(90deg, #ffc029 0%, #4cd8b0 100%);
+}
+.Section_Gradient_Title::selection {
+  background-color: #4cd8b0;
+  color: #fff;
+}
+
+.Section_Gradient_Title h2 {
+  border-bottom: 3px solid transparent; /* Espessura do border-top */
+  border-image: linear-gradient(90deg, #ffc029 0%, #4cd8b0 100%) 1;
+  margin-bottom: -10px;
+}
+.grid-container {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.Elsa {
+  width: 258px;
+  height: 171px;
+  display: flex;
+  margin-left: 115px;
+}
+
+.Wish_1 {
+  width: 258px;
+  height: 171px;
+  margin-left: 943px;
+  margin-top: -170px;
+  display: flex;
+}
+
+.Mickey {
+  display: flex;
+  justify-content: center;
+}
+.Mickey_item_details {
+  width: 400px;
+  height: 100%;
+  display: flex;
+  padding: 30px 0;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+.Mickey_item_details h4 {
+  padding-top: 20px;
+  font-size: 25px;
+  font-weight: 400;
+}
+.Mickey_wrap {
+  width: 400px;
+  height: 100%;
+  background-color: white;
+  border-radius: 20px;
+}
+.Mickey_wrap a img {
+  width: 400px;
+}
+.Mickey_wrap a {
+  border-radius: 5px;
+  background: white;
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+}
+.Blonde_Woman {
+  width: 258px;
+  height: 171px;
+  display: flex;
+  margin-left: 115px;
+  margin-top: -45px;
+}
+
+.Wish_2 {
+  width: 258px;
+  height: 171px;
+  margin-left: 943px;
+  margin-top: -155px;
+  display: flex;
+}
+.Natal_Disney {
+  margin: 0 10%;
+  align-items: center;
+  gap: 40px;
+  justify-content: center;
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+.photo_size img,
+.photo_size {
+  width: 258px;
+}
+.item {
+  display: flex;
+  flex-direction: column;
+}
+.item div a {
+  text-decoration: none;
+  color: black;
+}
+.item_details {
+  text-align: center;
+  padding-top: 20px;
+}
+.item_details p {
+  font-size: 13px;
+  font-weight: 400;
+  padding-bottom: 15px;
+}
+.item_details h4 {
+  font-size: 18px;
+  font-weight: 500;
+}
+.wrap {
+  padding: 20px 0;
+}
+.Mickey_wrap_detail {
+  height: 5px;
+  width: 100%;
+  background: linear-gradient(90deg, #ffc029 0%, #4cd8b0 100%);
+  border-radius: 15px;
+}
+.section_img {
+  justify-content: start;
+  margin: 60px auto;
+  max-width: 1000px;
+  position: relative;
+  display: flex;
+}
+.robot_img img {
+  border-radius: 5px;
+}
+.robot_text_right {
+  display: flex;
+  position: absolute;
+  right: 0;
+  transform: translate(10%, -50%);
+  top: 50%;
+  z-index: 10;
+  flex-direction: column;
+  gap: 20px;
+  padding: 30px;
+  width: 300px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+  background-color: white;
+  border-radius: 5px;
+}
+.robot_text_right::after {
+  background-color: #ffc029;
+  background-image: -webkit-linear-gradient(-450deg, #ffc029 0%, #4cd8b0 100%);
+  background-image: linear-gradient(180deg, #ffc029 0%, #4cd8b0 100%);
+  border-bottom-right-radius: 0.25rem;
+  border-top-right-radius: 0.25rem;
+  bottom: 0;
+  content: '';
+  display: block;
+  height: 100%;
+  margin: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 0.1875rem;
+}
+.robot_text_right h4 {
+  font-size: 30px;
+  font-weight: 400;
+}
+.robot_text_right button {
+  border: none;
+  padding: 10px 0;
+  background-color: #c1ffed;
+  cursor: pointer;
+  border-radius: 4px;
+}
+.robot_text_right button:hover {
+  transition-duration: 0.2s;
+  background-color: #15d7a0;
+  color: white;
 }
